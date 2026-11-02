@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador LSM - TensorFlow</title>
+
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- librerias de TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <!-- CUADRO 1 -->
+        <div class="card cuadro-camara">
+            <h2>Clasificador en Tiempo Real - LSM</h2>
+            <video autoplay playsinline muted width="227" height="227" id="webcam"></video>
+        </div>
+
+       <!-- CUADRO 2 -->
+        <div class="card cuadro-mobilenet">
+            <h3>Predicción MobileNet (General)</h3>
+            <div id="console">Cargando modelo...</div>
+        </div>
+
+        <!-- CUADRO 3 -->
+        <div class="card cuadro-knn-extendido">
+            <h3>Predicción Personalizada (LSM - KNN)</h3>
+            <div id="console2">Esperando entrenamiento de señas...</div>
+            
+            <!-- Contenedor con los botones de la A a la Z organizados en filas -->
+            <div class="botones-grid">
+                <button onclick="addExample('A');">A</button>
+                <button onclick="addExample('B');">B</button>
+                <button onclick="addExample('C');">C</button>
+                <button onclick="addExample('D');">D</button>
+                <button onclick="addExample('E');">E</button>
+                <button onclick="addExample('F');">F</button>
+                <button onclick="addExample('G');">G</button>
+                <button onclick="addExample('H');">H</button>
+                <button onclick="addExample('I');">I</button>
+                <button onclick="addExample('J');">J</button>
+                <button onclick="addExample('K');">K</button>
+                <button onclick="addExample('L');">L</button>
+                <button onclick="addExample('M');">M</button>
+                <button onclick="addExample('N');">N</button>
+                <button onclick="addExample('Ñ');">Ñ</button>
+                <button onclick="addExample('O');">O</button>
+                <button onclick="addExample('P');">P</button>
+                <button onclick="addExample('Q');">Q</button>
+                <button onclick="addExample('R');">R</button>
+                <button onclick="addExample('S');">S</button>
+                <button onclick="addExample('T');">T</button>
+                <button onclick="addExample('U');">U</button>
+                <button onclick="addExample('V');">V</button>
+                <button onclick="addExample('W');">W</button>
+                <button onclick="addExample('X');">X</button>
+                <button onclick="addExample('Y');">Y</button>
+                <button onclick="addExample('Z');">Z</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

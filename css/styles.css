@@ -1,0 +1,75 @@
+body {
+    background-color: #e0f2f1; /* fondo azul claro verdoso */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; 
+    align-items: center;
+}
+
+.card {
+    background-color: #fdfbf7; /* color cremita */
+    border: 2px solid #dcd6cd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* CUADRO 1 */
+.cuadro-camara {
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.cuadro-camara video {
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+/* CUADRO 2 */
+.cuadro-mobilenet {
+    width: 90%;
+    max-width: 450px;
+}
+
+/* CUADRO 3 */
+.cuadro-knn-extendido {
+    width: 95%;
+    max-width: 850px; 
+    min-height: 180px; 
+}
+
+.botones-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.botones-grid button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.botones-grid button:hover {
+    background-color: #004d40;
+}
